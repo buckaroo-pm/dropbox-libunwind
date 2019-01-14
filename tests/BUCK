@@ -1,0 +1,29 @@
+cxx_binary(
+  name = 'crasher',
+  srcs = [
+    'crasher.c',
+  ],
+  deps = [
+    '//:unwind',
+  ],
+)
+
+cxx_binary(
+  name = 'forker',
+  srcs = [
+    'forker.c',
+  ],
+  deps = [
+    '//:unwind',
+  ],
+)
+
+cxx_binary(
+  name = 'gperf-simple',
+  srcs = [
+    'Gperf-simple.c',
+  ],
+  deps = [
+    '//:unwind',
+  ],
+)

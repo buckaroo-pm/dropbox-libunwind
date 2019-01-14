@@ -67,3 +67,11 @@ tests/[GL]ia64-test-readonly
 tests/[GL]ia64-test-stack
 tests/ia64-test-dyn1
 tests/ia64-test-sig
+
+.buckd
+buck-out
+.buckconfig.local
+.buckconfig.d
+buckaroo
+buckaroo_macros.bzl
+trace

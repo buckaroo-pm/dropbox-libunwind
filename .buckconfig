@@ -1,0 +1,12 @@
+[project]
+  ignore = .git
+
+[parser]
+  default_build_file_syntax = SKYLARK
+
+[cxx]
+  should_remap_host_platform = true
+
+[cxx#linux-x86_64]
+  should_remap_host_platform = true
+  cppflags = -g -DCONFIG_BLOCK_SIGNALS=1 -DOS_LINUX=1 -D_GNU_SOURCE=1 -DUNW_TARGET_X86_64=1 -DSIZEOF_OFF_T=8 -DHAVE_SYS_PROCFS_H=1 -DHAVE_STRUCT_ELF_PRSTATUS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_EXECINFO_H=1 -DHAVE_ELF_H=1 -DUSE_ELF64=1 -DHAVE_LINK_H=1 -DSTDC_HEADERS=1 -DHAVE_SYS_PTRACE_H=1 -DHAVE_ENDIAN_H=1
